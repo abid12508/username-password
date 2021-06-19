@@ -1,0 +1,25 @@
+#username set
+print("change your username")
+username = input()
+#findusername
+print("enter your username")
+def usernamefind():
+    findusername = input()
+    if username in findusername:
+        print("pass! Change your password")
+        #passwordfunctioninsideusernamefunction. hehe
+        def passwordfind():
+            password = input()
+            print("enter your password")
+            findpassword = input()
+            if findpassword in password:
+                print("welcome!")
+            elif findpassword not in password:
+                print("try again")
+                passwordfind()
+        passwordfind()
+    elif username not in findusername:
+        print("try again")
+        usernamefind()
+usernamefind()
+        
