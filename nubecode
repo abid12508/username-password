@@ -15,7 +15,7 @@ def usernamefind():
             if findpassword in password:
                 print("welcome!")
             elif findpassword not in password:
-                print("try again")
+                print("error, try again")
                 passwordfind()
         passwordfind()
     elif username not in findusername:
